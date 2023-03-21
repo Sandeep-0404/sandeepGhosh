@@ -1,28 +1,71 @@
-import React from 'react';
-import './about.css'
-import AboutImg from '../../asset/aboutMe.jpg'
-import CV from '../../asset/John-Cv.pdf';
-import Info from './Info';
+import React from "react";
+import "./about.css";
+import AboutImg from "../../asset/aboutMe.jpg";
+import CV from "../../asset/John-Cv.pdf";
+import Info from "./Info";
 
+const Skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "SASS",
+  "GIT",
+  "Github",
+  "Responsive Design",
+  "Node Js",
+  "Express Js",
+  "MongoDb",
+  "Mongoose",
+  "Figma",
+];
 
-const About=()=>
-{
-    return(
-        <>
-            <section className='about section' id='about'>
-                <h2 className='section__title'>About Me</h2>
-                <span className='section__subtitle'>My introduction</span>
+const About = () => {
+  return (
+    <>
+      <section className="about section" id="about">
+        <h2 className="section__title">About Me</h2>
 
-                <div className='about__container container grid'>
-                    <img src={AboutImg} alt="" className='about__img'/>
+        <div className="about__container container grid">
+          <div className="about__data">
+            <h1 className="about__content-title">Get to know me!</h1>
+            <p>
+              I'm a <span>Frontend Web Developer</span> building the Front-end
+              of Websites and Web Applications that leads to the success of the
+              overall product. Check out some of my work in the
+              <span> Projects</span> section.
+            </p>
+            <br />
+            <p>
+              {" "}
+              I also like sharing content related to the stuff that I have
+              learned over the years in Web Development so it can help other
+              people of the Dev Community. Feel free to Connect or Follow me on
+              my Linkedin where I post useful content related to Web Development
+              and Programming.
+            </p>
+            <br />
+            <p>
+              {" "}
+              I'm open to <span>Job </span>
+              opportunities where I can contribute, learn and grow. If you have
+              a good opportunity that matches my skills and experience then
+              don't hesitate to <span>contact</span> me.
+            </p>
+          </div>
 
-                    <div className='about__data'>
-                        <Info/>
-                        <p className='about__description'>Frontent developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.</p>
-<br/>
-<br/>
-                        <a download="" href={CV} className="button button--flex">Download CV
-                        <svg
+          <div className="about__skills">
+            <div className="button__skills">
+              <h3 className="about__content-title">My Skills</h3>
+
+              {Skills.map((item, ind) => {
+                return <Info name={item} />;
+              })}
+            </div>
+
+            <a download="" href={CV} className="button button--flex">
+              Download CV
+              <svg
                 class="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -46,12 +89,13 @@ const About=()=>
                   d="M11.25 17.7502H7.25C6.84 17.7502 6.5 17.4102 6.5 17.0002C6.5 16.5902 6.84 16.2502 7.25 16.2502H11.25C11.66 16.2502 12 16.5902 12 17.0002C12 17.4102 11.66 17.7502 11.25 17.7502Z"
                   fill="var(--container-color)"
                 ></path>
-              </svg></a>
-                    </div>
-                </div>
-            </section>
-        </>
-    )
-}
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
 
 export default About;

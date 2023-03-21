@@ -4,93 +4,48 @@ import "./contact.css";
 const Contact = () => {
   return (
     <>
-      <section className="contact section" id="contact">
-        <h2 className="section__title">Get in touch</h2>
-        <span className="section__subtitle">Contact Me</span>
+      <section className="contact">
+        <div className="contact-container">
+          <p className="section__title">contact</p>
+          <p className="contact-main_para">
+            Feel free to Contact me by submitting the form below and I will get
+            back to you as soon as possible
+          </p>
+          <div className="contact-div">
+            <form action="/action_page.php">
+              <label htmlFor="name" className="contact__form-label">
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter Your Name"
+                className="contact__form-input"
+              />
 
-        <div className="contact__container container grid">
-          <div className="contact__content">
-            <h3 className="contact__title">Talk to me</h3>
+              <label htmlFor="email" className="contact__form-label">
+                Email
+              </label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Enter Your Email"
+                className="contact__form-input"
+              />
 
-            <div className="contact__info">
-              <div className="contact__card">
-                <i className="bx bx-mail-send contact__card-icon"></i>
-
-                <h3 className="contact__card-title">Email</h3>
-                <span className="contact__card-data">
-                  sandeepgh2002@gmail.com
-                </span>
-
-                <a href="" className="contact__button">
-                  Write me
-                  <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-                </a>
-              </div>
-
-              <div className="contact__card">
-                <i className="bx bxl-whatsapp contact__card-icon-"></i>
-
-                <h3 className="contact__card-title">Whatsapp</h3>
-                <span className="contact__card-data">6309-324-301</span>
-
-                <a href="" className="contact__button">
-                  Write me
-                  <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-                </a>
-              </div>
-
-              <div className="contact__card">
-                <i className="bx bxl-messenger contact__card-icon"></i>
-
-                <h3 className="contact__card-title">Messenger</h3>
-                <span className="contact__card-data">sandeep.123</span>
-
-                <a href="" className="contact__button">
-                  Write me
-                  <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="contact__content">
-            <h3 className="contact__title">Write me</h3>
-
-            <form className="contact__form">
-              <div className="contact__form-div">
-                <label className="contact__form-tag">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  className="contact__form-input"
-                  placeholder="Insert your name"
-                />
-              </div>
-
-              <div className="contact__form-div">
-                <label className="contact__form-tag">Mail</label>
-                <input
-                  type="email"
-                  name="email"
-                  className="contact__form-input"
-                  placeholder="Insert your email"
-                />
-              </div>
-
-              <div className="contact__form-div contact__form-area">
-                <label className="contact__form-tag">Project</label>
-                <textarea
-                  name="project"
-                  cols="30"
-                  rows="10"
-                  className="contact__form-input"
-                  placeholder="Write your project"
-                ></textarea>
-              </div>
-
-              <button className="button button--flex">
-            Send Message
-            <svg
+              <label htmlFor="message" className="contact__form-label">
+                Message
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Enter your Message"
+              ></textarea>
+              <button className="button contact-button button--flex">
+                Send Message
+                <svg
                   class="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -107,9 +62,7 @@ const Contact = () => {
                     fill="var(--container-color)"
                   ></path>
                 </svg>
-          </button>
-
-
+              </button>
             </form>
           </div>
         </div>
@@ -119,3 +72,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
+/*
+ */

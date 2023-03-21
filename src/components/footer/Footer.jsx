@@ -1,43 +1,49 @@
-import React from 'react';     
-import './footer.css'
+import React from "react";
+import "./footer.css";
 
-const Footer=()=>
-{
-    return (
-        <>
-<footer className='footer'>
-    <div className='footer__container container'>
-        <h1 className='footer__title'>Sandeep</h1>
-        <ul className='footer__list'>
-            <li>
-                <a href='#about' className='footer__link'>About</a>
-            </li>
-            <li>
-                <a href='#portfolio' className='footer__link'>Projects</a>
-            </li>
-            <li>
-                <a href='#contact' className='footer__link'>Contact Me</a>
-            </li>
-        </ul>
-
-        <div className='footer__social'>
-        <a href='' className='footer__social-link' target="_blank">
-                <i className='bx bxl-instagram'></i>
-            </a>
-            <a href='' className='footer__social-link' target="_blank">
-            <i className='bx bxl-facebook'></i>
-            </a>
-            <a href='' className='footer__social-link' target="_blank">
-            <i class='bx bxl-twitter'></i>
-            </a>
+const Footer = () => {
+  return (
+    <>
+      <footer className="footer">
+        <div className="footer__container container">
+          <div className="footer__main-content">
+            <div className="footer-info">
+              <h2>Sandeep Ghosh</h2>
+              <p>
+                A Frontend focused Web Developer building the Frontend of
+                Websites and Web Applications that leads to the success of the
+                overall product
+              </p>
+            </div>
+            <div className="footer-social">
+              <h2>Social</h2>
+              <div className="footer-links">
+                <a href="" className="footer__social-icon" target="_blank">
+                  <i className="uil uil-twitter"></i>
+                </a>
+                <a href="" className="footer__social-icon" target="_blank">
+                  <i className="uil uil-instagram"></i>
+                </a>
+                <a href="" className="footer__social-icon" target="_blank">
+                  <i className="uil uil-linkedin"></i>
+                </a>
+                <a href="" className="footer__social-icon" target="_blank">
+                  <i className="uil uil-dribbble"></i>
+                </a>
+                <a href="" className="footer__social-icon" target="_blank">
+                  <i className="uil uil-github-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <p className="copy">
+            &#169; coyright 2023, Made by{" "}
+            <span className="footer-name">Sandeep Ghosh</span>
+          </p>
         </div>
-
-<span className='footer__copy'>&#169; SandeepGhosh. All rights reserved</span>
-
-    </div>
-</footer>
-        </>
-    )
-}
+      </footer>
+    </>
+  );
+};
 
 export default Footer;
