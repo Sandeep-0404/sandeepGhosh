@@ -1,15 +1,66 @@
-.black_box {
-    background-color: black;
-    width: 180px;
-    height: 50px;
-    position: absolute;
+.project {
+    max-width: 120rem;
+    margin: auto;
+    width: 92%;
 }
 
-.main_box {
-    background-color: blue;
-    width: 180px;
-    height: 50px;
-    position: relative;
-    top: -50px;
-    z-index: -1;
+.section {
+    padding: 2rem 0 4rem;
+}
+
+.project-container {
+    background-color: rgba(239, 233, 233, 0.2);
+}
+
+.project-image {
+    /* background: url('../../projectPic/shop.svg'); */
+    width: 720px;
+    height: 540px;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+
+.individual-projects {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.project-description {
+    max-width: 500px;
+}
+
+.project-name {
+    font-weight: bolder;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: black;
+}
+
+.project-description p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 60rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+.project-description button {
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .individual-projects {
+        flex-direction: column;
+    }
+
+    .project-description {
+        text-align: center;
+    }
+
+    .project-image {
+        display: block;
+        margin: 2rem auto;
+    }
 }
