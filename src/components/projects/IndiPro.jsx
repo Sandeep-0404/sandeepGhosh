@@ -1,6 +1,10 @@
 import React from "react";
 
 const IndiPro = (props) => {
+  const redirect = () => {
+    window.open(props.link, "_blank");
+  };
+
   return (
     <div className="individual-projects">
       <div className="image-box">
@@ -15,7 +19,9 @@ const IndiPro = (props) => {
       <div className="project-description">
         <h2 className="project-name">{props.name}</h2>
         <p>{props.desc}</p>
-        <button className="button button--flex">Case study</button>
+        <button className="button button--flex" onClick={redirect}>
+          LIVE LINK
+        </button>
       </div>
     </div>
   );
