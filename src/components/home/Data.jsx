@@ -15,7 +15,7 @@ const Data = () => {
           </span>
           <br />
           <br />
-          <a href="#contact" className="button button--flex">
+          <a href="#project" className="button button--flex">
             Projects
           </a>
         </p>

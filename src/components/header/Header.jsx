@@ -15,25 +15,25 @@ const Header = () => {
           <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
             <ul className="nav__list grid">
               <li className="nav__item">
-                <a href="home" className="nav__link">
+                <a href="#home" className="nav__link">
                   <i class="uil uil-estate nav__icon active-link"></i> Home
                 </a>
               </li>
 
               <li className="nav__item">
-                <a href="about" className="nav__link">
+                <a href="#about" className="nav__link">
                   <i className="uil uil-user nav__icon"></i>About
                 </a>
               </li>
 
               <li className="nav__item">
-                <a href="project" className="nav__link">
+                <a href="#project" className="nav__link">
                   <i className="uil uil-file-alt nav__icon"></i> Projects
                 </a>
               </li>
 
               <li className="nav__item">
-                <a href="contact-container" className="nav__link">
+                <a href="#contact" className="nav__link">
                   <i className="uil uil-message nav__icon"></i> Contact
                 </a>
               </li>

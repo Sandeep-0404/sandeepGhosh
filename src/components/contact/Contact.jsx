@@ -1,10 +1,38 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./contact.css";
+import { toast, ToastContainer } from "react-toastify";
 
 const Contact = () => {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [msg, setMsg] = useState();
+
+  const form = useRef();
+  const toastSuccess = () => toast.success("Message sent Successfully :)");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_vf7arom",
+        "template_1bd03xe",
+        form.current,
+        "O6P8UW9Mb2wl49VgS"
+      )
+      .then(
+        (result) => {},
+        (error) => {
+          const toastError = () => toast.error(error);
+          toastError();
+        }
+      );
+  };
+
   return (
     <>
-      <section className="contact" name="contact">
+      <section className="contact" id="contact">
         <div className="contact-container">
           <p className="section__title">contact</p>
           <p className="contact-main_para">
@@ -12,7 +40,7 @@ const Contact = () => {
             back to you as soon as possible
           </p>
           <div className="contact-div">
-            <form action="/action_page.php">
+            <form action="/action_page.php" ref={form} onSubmit={sendEmail}>
               <label htmlFor="name" className="contact__form-label">
                 Name
               </label>
@@ -43,7 +71,10 @@ const Contact = () => {
                 id="message"
                 placeholder="Enter your Message"
               ></textarea>
-              <button className="button contact-button button--flex">
+              <button
+                className="button contact-button button--flex"
+                onClick={toastSuccess}
+              >
                 Send Message
                 <svg
                   class="button__icon"

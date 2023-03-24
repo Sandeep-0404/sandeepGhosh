@@ -21,26 +21,27 @@ const Projects = () => {
 
           <div className="allProjects">
             <IndiPro
-              image={shop}
-              name="ShoP."
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into "
+              image={keep}
+              name="Movix"
+              desc="Movix is a web App created in React that allows user to search for movies and TV shows.It allows user to find movies with certain filters such as genre, popularity, and year."
               width="700px"
-              link="https://sho-p.vercel.app/"
+              link="https://movix-gamma.vercel.app/"
             />
             <IndiPro
               image={crypto}
               name="Crypto Tracker."
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into"
+              desc="CryptoTracker is a web App created using ReactJs to help the user have a glance over the real-time trends of Cryptocurrency and hot news on their fingertips.This App is equipped with a curated Realtime Price Screener, Stats Table, And top News Viewer from various sources into a simple, focused format."
               width="700px"
               link="https://crypto-tracker-henna.vercel.app/"
             />
             <IndiPro
-              image={keep}
-              name="Movix"
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into"
+              image={shop}
+              name="ShoP."
+              desc="Shop is a responsive frontend Application made using React and Sass."
               width="700px"
-              link="https://movix-gamma.vercel.app/"
+              link="https://sho-p.vercel.app/"
             />
+
             <IndiPro
               image={health}
               name="Healtify"
