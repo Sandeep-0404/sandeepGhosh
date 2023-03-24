@@ -18,6 +18,7 @@ const Skills = [
   "MongoDb",
   "Mongoose",
   "Figma",
+  "SASS",
 ];
 
 const About = () => {

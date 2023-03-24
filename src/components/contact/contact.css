@@ -29,7 +29,7 @@ select {
 
 .contact-button {
     position: relative;
-    left: 450px;
+
 }
 
 .contact-div {
@@ -103,9 +103,70 @@ textarea:focus {
     outline: none;
 }
 
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 980px) {
+    .section__title {
+        font-size: 1.3rem;
+    }
+
+    .contact-main_para {
+        font-size: 0.9rem;
+    }
+
+
+    .contact-div {
+        padding: 3rem;
+        width: 80%;
+    }
+
+}
+
+/* For medium devices */
 @media screen and (max-width: 768px) {
-    .contact-button {
-        position: inherit;
-        margin: 0 auto;
+
+    .section__title {
+        font-size: 1.3rem;
+    }
+
+    .contact-main_para {
+        font-size: 0.9rem;
+    }
+
+    .contact-div {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    textarea {
+        font-size: 0.8rem;
+    }
+
+    .contact__form-input {
+        font-size: 0.8rem;
+    }
+
+    .contact__form-label {
+        font-size: 0.8rem;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 476px) {
+    .contact-div {
+        width: 100%;
+    }
+
+    textarea {
+        font-size: 0.7rem;
+    }
+
+    .contact__form-input {
+        font-size: 0.7rem;
+    }
+
+    .contact__form-label {
+        font-size: 0.7rem;
     }
 }
