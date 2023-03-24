@@ -3,7 +3,7 @@ import "./projects.css";
 import IndiPro from "./IndiPro";
 import shop from "../../projectPic/shop.svg";
 import crypto from "../../projectPic/crypto.svg";
-import keep from "../../projectPic/keep.svg";
+import keep from "../../projectPic/movix.svg";
 import health from "../../projectPic/health.svg";
 
 const Projects = () => {
@@ -22,23 +22,27 @@ const Projects = () => {
           <div className="allProjects">
             <IndiPro
               image={shop}
-              name="shoP."
+              name="ShoP."
               desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into "
+              width="700px"
             />
             <IndiPro
               image={crypto}
               name="Crypto Tracker."
               desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into"
+              width="700px"
             />
             <IndiPro
               image={keep}
-              name="Sandy Keep"
+              name="Movix"
               desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into"
+              width="700px"
             />
             <IndiPro
               image={health}
               name="Healtify"
               desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into"
+              width="250px"
             />
           </div>
         </section>
