@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import AboutImg from "../../asset/aboutMe.jpg";
-import CV from "../../asset/John-Cv.pdf";
+import CV from "../../asset/SandeepGhoshResume.pdf";
 import Info from "./Info";
 
 const Skills = [
@@ -18,7 +18,6 @@ const Skills = [
   "MongoDb",
   "Mongoose",
   "Figma",
-  "SASS",
 ];
 
 const About = () => {
@@ -31,21 +30,15 @@ const About = () => {
           <div className="about__data">
             <h1 className="about__content-title">Get to know me!</h1>
             <p>
-              I'm a <span>Frontend Web Developer</span> building the Front-end
-              of Websites and Web Applications that leads to the success of the
-              overall product. Check out some of my work in the
-              <span> Projects</span> section.
+              Hi There! I'm <span>Sandeep Ghosh</span>.I am from Kolkata,West
+              Bengal and I am a 3rd year BTech Student of Electronics and
+              Communication Engineering at IIT(ISM)Dhanbad.I love to code and
+              work on projects that make a difference.You can find me
+              paricipating in hackathons or doing competitive programming in
+              free time.
             </p>
             <br />
-            <p>
-              {" "}
-              I also like sharing content related to the stuff that I have
-              learned over the years in Web Development so it can help other
-              people of the Dev Community. Feel free to Connect or Follow me on
-              my Linkedin where I post useful content related to Web Development
-              and Programming.
-            </p>
-            <br />
+
             <p>
               {" "}
               I'm open to <span>Job </span>

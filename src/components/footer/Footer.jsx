@@ -10,9 +10,8 @@ const Footer = () => {
             <div className="footer-info">
               <h2>Sandeep Ghosh</h2>
               <p>
-                A Frontend focused Web Developer building the Frontend of
-                Websites and Web Applications that leads to the success of the
-                overall product
+                A Full Stack Web Developer building Web Applications that can
+                make a difference
               </p>
             </div>
             <div className="footer-social">
