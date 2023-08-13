@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./projects.css";
 import IndiPro from "./IndiPro";
-import shop from "../../projectPic/shop.svg";
+import shop from "../../projectPic/softweavers.svg";
 import crypto from "../../projectPic/crypto.svg";
 import keep from "../../projectPic/movix.svg";
 import health from "../../projectPic/health.svg";
@@ -36,10 +36,10 @@ const Projects = () => {
             />
             <IndiPro
               image={shop}
-              name="ShoP."
-              desc="Shop is a responsive frontend Application made using React and Sass."
+              name="Softweavers"
+              desc="A Fully responsive Website made for a client in ReactJs"
               width="700px"
-              link="https://sho-p.vercel.app/"
+              link="https://softweavers.in/"
             />
 
             <IndiPro
